@@ -10,7 +10,7 @@ The bandwidth endpoint request takes five parameter: `from`, `to`, `timezone`, `
 
 - **from:** start of the period, represented in UNIX timestamp in milliseconds
 - **to:** end of the period, represented in UNIX timestamp in milliseconds
-- **timezone:** the timezone in which the date/time should be returned
+- **timezone:** the timezone in which the date/time should be returned; the property is optional and it can be skipped
 - **account_id:** the account id; the property is optional and it can be skipped. However, the response will return `0` for `accountBandwidth`
 - **resolution:** it takes either of two values `hour` or `range`
 

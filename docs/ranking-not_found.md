@@ -10,8 +10,8 @@ The not-found endpoint request takes four parameters: `from`, `to`, `timezone`, 
 
 - **from:** start of the period, represented in UNIX timestamp
 - **to:** end of the period, represented in UNIX timestamp
-- **timezone:** the timezone in which the date/time should be returned
-- **limit:** the number of the top N not found sources that the response should return
+- **timezone:** the timezone in which the date/time should be returned; the property is optional and it can be skipped
+- **limit:** the number of the top N not found sources that the response should return. It's a positive number. If `0` is passed as a parameter by default it will return only the top 10 not found sources.
 
 The max available period for fetching analytics data is 30 days. Thus the `from` "oldest" value will always be `now minus 30d`
 

@@ -10,7 +10,7 @@ The visitors endpoint request takes four parameters: `from`, `to`, `timezone`, a
 
 - **from:** start of the period, represented in UNIX timestamp
 - **to:** end of the period, represented in UNIX timestamp
-- **timezone:** the timezone in which the date/time should be returned
+- **timezone:** the timezone in which the date/time should be returned; the property is optional and it can be skipped
 - **resolution:** it takes either of two values `day` or `range`
 
 The max available period for fetching analytics data is 30 days. Thus the `from` "oldest" value will always be `now minus 30d`
